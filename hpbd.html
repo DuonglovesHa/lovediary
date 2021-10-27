@@ -78,7 +78,7 @@ white-space: nowrap;
   position: relative;
   top: 3px;
   margin: 0 auto;
-  height: 300px;
+  height: 400px;
   width: 300px;
   -webkit-transform-style: preserve-3d;
 }
@@ -198,6 +198,43 @@ white-space: nowrap;
 .ring > .twelve {
   -webkit-transform: rotateY(330deg) translateZ(500px);
 }
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 </style>
 <script src="/js/jquery-git2.js"></script>
 <script>
@@ -237,8 +274,8 @@ $(document).ready(function(){
     <table align="center" cellpadding="0" cellspacing="0" border="0"><tr><td class="text03aMC" width="540" style="margin-top: 0;margin-bottom: 0;padding-top: 10px;padding-bottom: 0;color: #555555;border-collapse: collapse;padding-left: 0;padding-right: 0;margin-left: 0;margin-right: 0;" >
         <table align="left" cellpadding="0" cellspacing="0" border="0">
             
-            <tr><td class="text03aGreeting" style="font-size: 24px;line-height: 21px;letter-spacing: 1px;font-weight: normal;">
-                Gửi Tới <span style="font-weight: bold;color: #FF0000;">Hà❤</span>
+            <tr><td class="text03aGreeting" style="font-size: 24px;line-height: 21px;letter-spacing: 1px;font-weight: normal; text-align: center;">
+                Gửi Tới <span style="font-weight: bold;color: #FF0000;">Hà❤</span> của Dương
             </td></tr>	
         </table>
     <div id="shape" class="cube backfaces">
@@ -256,6 +293,23 @@ $(document).ready(function(){
     <source src="movie.ogg" type="video/ogg">
   Your browser does not support the video tag.
   </video>
+  <div style="text-align: center">Anh hi vọng bé có một ngày sinh nhật tuổi 16 thật là đáng nhớ, chúc cho công chúa của anh mãi dễ thương, hiền lành, tốt bụng và yêu anh cho tới lúc về già nha 🥰</div>
+  <div style="text-align: center">
+    <img src="love.gif" alt="">
+  </div>
+  <div style="text-align: center">
+    Trên thế giới có bảy kỳ quan thiên nhiên. Nhưng với anh, bé chính là kỳ quan thứ 8 mà mẹ thiên nhiên đã ban tặng cho❤
+  </div>
+  <div style="text-align: center">
+    <button id="myBtn">
+      <img src="gift.gif" alt="">  
+    </button>
+    
+  </div>
+  <div style="text-align: center">
+    Hai hộp quà luôn nè, mở đi :>
+  </div>
+</div>  
 </b></td></tr></table></td></tr>	
         </table>
     </td></tr></table>
@@ -267,8 +321,41 @@ var no=100;var hidesnowtime=0;var snowdistance='pageheight';var ie4up=(document.
 </script>
     <!------- END FEATURED-05 MODULE ------->
 
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div style="text-align: center">
+      <img src="love2.gif" alt="">
+      <div style="font-size: 40px;">Anh chỉ muốn nói là Anh Yêu Em 😳</div>
+    </div>
+  </div>
+</div>
+<script>
+  // Get the modal
+var modal = document.getElementById("myModal");
 
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
 
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </body>
 </html>
-<div style="width: 100%; height: 0px; position: relative; padding-bottom: 55.684%;"><iframe src="" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div>
